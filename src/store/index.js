@@ -17,18 +17,6 @@ export default new Vuex.Store({
   },
   getters: { order: state => state.order
   },
-  mutations: {
-    BUY (state, itemid) {
-      state.order.push(itemid)
-    },
-    SELECT (state, itemid) {
-      state.selectedcard = itemid
-    },
-    GET_CARD (state, payload) {
-      state.card = Object.values(payload)
-      console.log(state.card)
-    }
-  },
   actions: {
     addToItems: ({ commit }, item) => commit('BUY', item),
     getCard (context) {
@@ -46,7 +34,19 @@ export default new Vuex.Store({
     selectCard (context, itemid) {
       context.commit('SELECT', itemid)
       console.log('asd')
-      console.log(itemid)
+      console.log(this.state.selectedcard)
+    }
+  },
+  mutations: {
+    BUY (state, itemid) {
+      state.order.push(itemid)
+    },
+    SELECT (state, itemid) {
+      state.selectedcard = itemid
+    },
+    GET_CARD (state, payload) {
+      state.card = Object.values(payload)
+      console.log(state.card)
     }
   },
   modules: {

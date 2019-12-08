@@ -12,7 +12,7 @@
       />
 
       <q-card-section>
-        <q-item clickable to="/card" v-on:click="selectCard(item.id )" v-close-popup>
+        <q-item clickable to="/card" v-on:click="selectCard(item.id)" v-close-popup>
           <q-item-section class="text-body2">{{item.title}}</q-item-section>
         </q-item>
       </q-card-section>
@@ -56,7 +56,8 @@ export default {
   },
   methods: {
     fuf () {
-      return '../statics/img/' + this.item.id + '.png'
+      return '../statics/img/' + 1 + '.png'
+      /* return '../statics/img/' + this.item.id + '.png' */
     },
     ...mapActions({
       buyItem: 'addToItems',

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d43d9a21-df23-48c3-8165-6cffcf360426" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/card/index.js" afterDir="false" />
+    <list default="true" id="d43d9a21-df23-48c3-8165-6cffcf360426" name="Default Changelist" comment="фыв">
+      <change afterPath="$PROJECT_DIR$/src/boot/api_cat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/boot/api1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/api1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/item_catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item_catalog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/accessories.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/accessories.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/atom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/atom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/liquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/liquid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mod.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/pod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/pod.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/vape.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/vape.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/wliquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wliquid.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/items/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/items/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +29,16 @@
   <component name="ProjectId" id="1URq6A51p3AmPrH8aSYngVyprXj" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-todo-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/boot" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\user\Documents\Vue_apps\BDProject\node_modules\prettier" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\Vue_apps\BDProject\src\boot" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -54,7 +67,7 @@
       <workItem from="1575489369620" duration="3464000" />
       <workItem from="1575583291050" duration="27259000" />
       <workItem from="1575762932080" duration="676000" />
-      <workItem from="1575803572530" duration="10788000" />
+      <workItem from="1575803572530" duration="17727000" />
     </task>
     <task id="LOCAL-00001" summary="фыв">
       <created>1575498404931</created>

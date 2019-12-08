@@ -81,7 +81,7 @@ export default {
     })
   },
   mounted () {
-    this.getItems()
+    this.getItems(8)
     this.items = this.itms
   },
   methods: {
