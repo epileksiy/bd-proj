@@ -10,7 +10,9 @@ export default new Vuex.Store({
   state: {
     quant: 7,
     items: [],
-    order: []
+    order: [1, 2]
+  },
+  getters: { order: state => state.order
   },
   mutations: {
     BUY (state, itemid) {

@@ -6,6 +6,7 @@
       <div class="col-5 q-mt-xl">
       <div class="text-h5">Ваш заказ :</div>
         <div class="bg-grey-3  q-py-md q-pa-lg">
+          <itemBucket v-for="order in orders" :order="order" :key="order.id"></itemBucket>
           <q-card-section class="text-h5 flex justify-end items-end">Итого: 4370 &#8381;</q-card-section>
         </div>
     </div>
@@ -78,17 +79,29 @@
     </div>
 </div>
 </template>
-
 <script>
+import { mapGetters } from 'vuex'
+import itemBucket from '../components/item_bucket'
 export default {
   name: 'basket',
+  components: { itemBucket },
+  computed: {
+    ...mapGetters({
+      ordrs: 'order'
+    })
+  },
+  mounted () {
+    this.orders = this.ordrs
+    console.log(this.orders)
+  },
   data () {
     return {
       name: null,
       age: null,
       accept: false,
       shape: '3',
-      shape1: '1'
+      shape1: '1',
+      orders: []
     }
   },
 
