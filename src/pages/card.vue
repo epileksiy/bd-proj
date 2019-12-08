@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-md-7 col-sm-12 col-xs-12 column justify-around   ">
                   <q-card-section  >
-                    <div class="text-h5 q-pb-xl">Электронный испаритель Logic Compact (350 mAh)</div>
+                    <div class="text-h5 q-pb-xl">{{card[0].title}}</div>
                   </q-card-section>
                   <q-card-section class="">
                     <div class="text-h6">Артикул: 93624 <br>
@@ -163,7 +163,7 @@
                       />
 
                       <q-card-section>
-                        <div class="text-body2">Vandy Vape Swell-боксмод</div>
+                        <div class="text-body2">asd</div>
                       </q-card-section>
                       <q-card-section class="full-width">
                         <div class="row justify-between ">
@@ -253,7 +253,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'card',
   data () {
@@ -276,8 +276,20 @@ export default {
       }, 2000)
     },
     ...mapActions({
-      getCard: 'card/getCard'
+      getCard: 'loadCard'
     })
+  },
+  computed: {
+    ...mapGetters({
+      card: 'getCard'
+    })
+  },
+  beforeMount () {
+    this.getCard(this.$route.params.id)
+      .then(() => {
+        console.log(this.card)
+      })
+    console.log(this.$route.params.id)
   }
 }
 </script>

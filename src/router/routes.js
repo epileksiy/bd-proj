@@ -57,7 +57,9 @@ const routes = [
         component: () => import('pages/atom.vue')
       },
       {
-        path: 'card',
+        path: 'card/:id',
+        name: 'card',
+        params: true,
         component: () => import('pages/card.vue')
       },
       {

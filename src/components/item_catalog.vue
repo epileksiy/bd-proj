@@ -12,7 +12,7 @@
       />
 
       <q-card-section>
-        <q-item clickable to="/card" v-on:click="selectCard(item.id)" v-close-popup>
+        <q-item clickable :to="{ name: 'card', params: { id: item.id } }" v-on:click="selectCard(item.id)" v-close-popup>
           <q-item-section class="text-body2">{{item.title}}</q-item-section>
         </q-item>
       </q-card-section>

@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import article from './article'
 import auth from './auth'
 import items from './items'
-import API2 from '../boot/api1'
+import API from '../boot/api'
 
 Vue.use(Vuex)
 
@@ -13,17 +13,20 @@ export default new Vuex.Store({
     items: [],
     order: [],
     selectedcard: null,
-    cardinfo: null
+    cardinfo: null,
+    card: null
   },
-  getters: { order: state => state.order
+  getters: {
+    order: state => state.order,
+    getCard: state => state.card
   },
   actions: {
     addToItems: ({ commit }, item) => commit('BUY', item),
-    getCard (context) {
+    loadCard (context, id) {
       return new Promise((resolve, reject) => {
-        API2.get(this.selectedcard)
+        API.get(`product/${id}`)
           .then(response => {
-            context.commit('GET_CARD', response.data[0])
+            context.commit('SET_CARD', response.data)
             resolve(response)
           })
           .catch(error => {
@@ -33,8 +36,6 @@ export default new Vuex.Store({
     },
     selectCard (context, itemid) {
       context.commit('SELECT', itemid)
-      console.log('asd')
-      console.log(this.state.selectedcard)
     }
   },
   mutations: {
@@ -44,7 +45,7 @@ export default new Vuex.Store({
     SELECT (state, itemid) {
       state.selectedcard = itemid
     },
-    GET_CARD (state, payload) {
+    SET_CARD (state, payload) {
       state.card = Object.values(payload)
       console.log(state.card)
     }

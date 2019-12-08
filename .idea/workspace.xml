@@ -3,8 +3,57 @@
   <component name="ChangeListManager">
     <list default="true" id="d43d9a21-df23-48c3-8165-6cffcf360426" name="Default Changelist" comment="фыв">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/quasar-logo-full.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/quasar-logo-full.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/sad.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sad.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/boot/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/boot/api1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/api1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/boot/api_cat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/api_cat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/boot/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article-comments.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article-comments.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article-content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article-content.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/comment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item_bucket.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item_bucket.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item_catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item_catalog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/quasar.variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/quasar.variables.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/CleanLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/CleanLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MyLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MyLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Error404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error404.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/accessories.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/accessories.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/atom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/atom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/basket.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/basket.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/input.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/liquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/liquid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mod.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/pod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/pod.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/reg.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/reg.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/vape.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/vape.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/wliquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wliquid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/article/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/article/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/auth/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/card/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/items/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/items/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/module-example/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/module-example/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/module-example/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/module-example/getters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/module-example/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/module-example/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/module-example/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/module-example/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/module-example/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/module-example/state.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +105,7 @@
       <workItem from="1575489369620" duration="3464000" />
       <workItem from="1575583291050" duration="27259000" />
       <workItem from="1575762932080" duration="676000" />
-      <workItem from="1575803572530" duration="18630000" />
+      <workItem from="1575803572530" duration="22016000" />
     </task>
     <task id="LOCAL-00001" summary="фыв">
       <created>1575498404931</created>
