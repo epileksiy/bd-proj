@@ -52,7 +52,7 @@
           </div>
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
         </div>
-      <container v-show="width>1023">
+      <div v-show="width>1023">
         <div class="row">
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
           <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-12">
@@ -69,8 +69,8 @@
           </div>
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
         </div>
-      </container>
-      <container v-show="width<1024">
+      </div>
+      <div v-show="width<1024">
         <div class="row">
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
           <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-12">
@@ -87,9 +87,8 @@
           </div>
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
         </div>
-      </container>
-      <container >
-        <div class="row q-mb-xl">
+      </div>
+        <div class="row q-mb-md">
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
           <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-12">
             <div class="container">
@@ -105,7 +104,6 @@
           </div>
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-4 col-xs-0"></div>
         </div>
-      </container>
     </q-page>
 </template>
 
