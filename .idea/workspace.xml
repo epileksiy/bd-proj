@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43d9a21-df23-48c3-8165-6cffcf360426" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/store/card/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item_catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item_catalog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +21,7 @@
   <component name="ProjectId" id="1URq6A51p3AmPrH8aSYngVyprXj" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dz.bonch.dev.5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-todo-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -50,7 +54,7 @@
       <workItem from="1575489369620" duration="3464000" />
       <workItem from="1575583291050" duration="27259000" />
       <workItem from="1575762932080" duration="676000" />
-      <workItem from="1575803572530" duration="5830000" />
+      <workItem from="1575803572530" duration="10788000" />
     </task>
     <task id="LOCAL-00001" summary="фыв">
       <created>1575498404931</created>

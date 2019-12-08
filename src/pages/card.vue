@@ -253,6 +253,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   name: 'card',
   data () {
@@ -261,7 +262,8 @@ export default {
       ratingModel: 5,
       ratingModel1: 2,
       tab: 'about',
-      items: [{}, {}, {}, {}, {}, {}, {}]
+      items: [{}, {}, {}, {}, {}, {}, {}],
+      cardinfo: null
     }
   },
   methods: {
@@ -272,7 +274,10 @@ export default {
           done()
         }
       }, 2000)
-    }
+    },
+    ...mapActions({
+      getCard: 'card/getCard'
+    })
   }
 }
 </script>
