@@ -10,7 +10,7 @@ export default new Vuex.Store({
   state: {
     quant: 7,
     items: [],
-    order: [1, 2]
+    order: []
   },
   getters: { order: state => state.order
   },
