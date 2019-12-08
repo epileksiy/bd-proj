@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43d9a21-df23-48c3-8165-6cffcf360426" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/layouts/MyLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MyLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +50,7 @@
       <workItem from="1575489369620" duration="3464000" />
       <workItem from="1575583291050" duration="27259000" />
       <workItem from="1575762932080" duration="676000" />
-      <workItem from="1575803572530" duration="3601000" />
+      <workItem from="1575803572530" duration="5830000" />
     </task>
     <task id="LOCAL-00001" summary="фыв">
       <created>1575498404931</created>

@@ -12,6 +12,8 @@ export default new Vuex.Store({
     items: [],
     order: []
   },
+  getters: { order: state => state.order
+  },
   mutations: {
     BUY (state, itemid) {
       state.order.push(itemid)
