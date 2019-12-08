@@ -2,7 +2,7 @@
   <q-layout view="hhh lpR fff">
       <q-header reveal elevated class="text-white bg-black q-px-md q-py-sm">
       <q-toolbar v-if="width >= 992"  class="justify-between row">
-        <q-toolbar-title class="col-lg-3 col-md-3 header-logo flex items-center">
+        <q-toolbar-title class="col-lg-3 col-md-4 header-logo flex justify-between items-center no-wrap">
           <a href="/"> <img src="../assets/log.png" alt=""></a>
           <q-btn to="/" class="q-ml-sm text-body1 text-uppercase">ГЛАВНАЯ</q-btn>
           <q-btn class="q-ml-sm text-body1 " label="Каталог">
@@ -43,12 +43,12 @@
             </q-menu>
           </q-btn>
         </q-toolbar-title>
-        <q-input class="flex col-lg-6 col-md-5 col-sm-4"  bg-color="white" v-model="search" filled type="search" hint="Search">
-          <template v-slot:append>
+        <q-input  rounded standout="bg-black " class=" q-my-md flex col-lg-6 col-md-5 col-sm-4 justify-center text-black" bg-color="white" v-model="text"  type="search" >
+          <template v-slot:prepend>
             <q-icon name="search" />
           </template>
         </q-input>
-        <q-list class="col-lg-2 col-md-3 col-sm-3 text-body1 flex justify-between items-center">
+        <q-list class="q-ml-md col-lg-3 col-md-3 col-sm-3 text-body1 flex justify-between items-center no-wrap">
             <q-item class="text-white text-body1 text-uppercase q-mr-sm" clickable to="/login">
               <q-item-section>
                   <q-item-label>ВХОД</q-item-label>
@@ -159,6 +159,7 @@ export default {
     &-logo
       img
         max-width: 221px
+        q-input
   .block
     min-width: 150px
 </style>
