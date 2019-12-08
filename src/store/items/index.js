@@ -9,7 +9,7 @@ const getters = {
 }
 
 const actions = {
-  getItems (context) {
+  getItems (context, cat) {
     return new Promise((resolve, reject) => {
       API1.get('product')
         .then(response => {
@@ -25,7 +25,6 @@ const actions = {
 const mutations = {
   GET_ITEMS (state, payload) {
     state.items = Object.values(payload)
-    console.log(state.items)
   }
 }
 
