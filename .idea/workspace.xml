@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43d9a21-df23-48c3-8165-6cffcf360426" name="Default Changelist" comment="фыв">
-      <change afterPath="$PROJECT_DIR$/src/boot/api_cat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boot/api1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/api1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item_catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item_catalog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/accessories.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/accessories.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/atom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/atom.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/liquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/liquid.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mod.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/pod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/pod.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/vape.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/vape.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/wliquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wliquid.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/items/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/items/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/boot/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/auth/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/auth.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +56,7 @@
       <workItem from="1575489369620" duration="3464000" />
       <workItem from="1575583291050" duration="27259000" />
       <workItem from="1575762932080" duration="676000" />
-      <workItem from="1575803572530" duration="17727000" />
+      <workItem from="1575803572530" duration="18630000" />
     </task>
     <task id="LOCAL-00001" summary="фыв">
       <created>1575498404931</created>

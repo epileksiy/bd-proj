@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const baseURL = 'http://larapress.ntzyr.xyz/'
+export const baseURL = 'http://logotipiwe.ru/dev_proj/public/api/'
 export const API_URL = baseURL + 'api/'
 
 const API = axios.create({

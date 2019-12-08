@@ -8,6 +8,7 @@ const getters = {
 const mutations = {
   AUTH_SUCCESS (state, data) {
     state.token = data.token
+    console.log(state.token)
   },
   AUTH_LOGOUT (state) {
     state.token = ''
