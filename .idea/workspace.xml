@@ -3,8 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="d43d9a21-df23-48c3-8165-6cffcf360426" name="Default Changelist" comment="фыв">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boot/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/auth/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item_bucket.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item_bucket.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item_catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item_catalog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MyLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MyLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/accessories.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/accessories.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/atom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/atom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/basket.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/basket.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/liquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/liquid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mod.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/nagrev.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nagrev.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/pod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/pod.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/vape.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/vape.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/wliquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wliquid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/img/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/img/22.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/img/33.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/33.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/img/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/img/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/img/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/img/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/img/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +41,7 @@
   <component name="ProjectId" id="1URq6A51p3AmPrH8aSYngVyprXj" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/boot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,7 +79,9 @@
       <workItem from="1575489369620" duration="3464000" />
       <workItem from="1575583291050" duration="27259000" />
       <workItem from="1575762932080" duration="676000" />
-      <workItem from="1575803572530" duration="18630000" />
+      <workItem from="1575803572530" duration="23057000" />
+      <workItem from="1575850231703" duration="12000" />
+      <workItem from="1575850451701" duration="14099000" />
     </task>
     <task id="LOCAL-00001" summary="фыв">
       <created>1575498404931</created>

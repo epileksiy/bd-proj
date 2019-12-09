@@ -18,7 +18,7 @@
                         <q-range
                           v-model="label"
                           :min="350"
-                          :max="1000"
+                          :max="9000"
                           :step="4"
                           label
                           color="primary"
@@ -56,7 +56,6 @@
         <div class="col-1"></div>
       </div>
     </div>
-    <div class="text-h5 text-center  text-red-8">Items: {{this.itms}}</div>
   </q-page>
 </template>
 
@@ -70,9 +69,9 @@ export default {
     return {
       label: {
         min: 350,
-        max: 1000,
-        items: null
-      }
+        max: 1000
+      },
+      items: null
     }
   },
   computed: {

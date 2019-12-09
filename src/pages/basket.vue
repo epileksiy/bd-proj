@@ -2,17 +2,24 @@
 <template>
 <div class="q-py-lg q-px-md">
   <div class="row">
-    <div class="col-1"></div>
-      <div class="col-5 q-mt-xl">
+    <div v-show="width>400" class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0 "></div>
+      <div v-show="width>1000" class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 q-mt-xl ">
       <div class="text-h5">Ваш заказ :</div>
         <div class="bg-grey-3  q-py-md q-pa-lg">
-          <itemBucket v-for="order in orders" :order="order" :key="order.id"></itemBucket>
-          <q-card-section class="text-h5 flex justify-end items-end">Итого: 4370 &#8381;</q-card-section>
+          <itemBucket v-for="order in orders" :key="order.id" v-bind:order="order" v-bind:sum="sum"></itemBucket>
+          <q-card-section class="text-h5 flex justify-end items-end">Итого: {{this.$store.state.price}} &#8381;</q-card-section>
         </div>
+      </div>
+    <div v-show="width<1000" class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="text-h5">Ваш заказ :</div>
+      <div class="bg-grey-3  q-py-md q-pa-lg">
+        <itemBucket v-for="order in orders" :key="order.id" v-bind:order="order" v-bind:sum="sum"></itemBucket>
+        <q-card-section class="text-h5 flex justify-end items-end">Итого: {{this.$store.state.price}} &#8381;</q-card-section>
+      </div>
     </div>
-    <div class="col-1"></div>
+    <div v-show="width>400" class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
     <!--<div class="col-1"></div>-->
-    <div class=" q-ml-xl col-4 q-mt-xl">
+    <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 q-mt-xl">
       <div class="text-h5 q-mb-lg">Оформление заказа</div>
       <q-form
         @submit="onSubmit"
@@ -71,7 +78,7 @@
             </q-radio>
           </div>
         </div>
-        <div class="flex justify-start q-mt-xl">
+        <div class="flex justify-start q-mt-xl q-mb-lg">
           <q-btn label="Завершить оформление заказа" type="submit" color="primary"/>
         </div>
       </q-form>
@@ -87,7 +94,8 @@ export default {
   components: { itemBucket },
   computed: {
     ...mapGetters({
-      ordrs: 'order'
+      ordrs: 'order',
+      sum: 'price'
     })
   },
   mounted () {
@@ -101,7 +109,9 @@ export default {
       accept: false,
       shape: '3',
       shape1: '1',
-      orders: []
+      orders: [],
+      sum: 0,
+      width: 0
     }
   },
 
@@ -128,7 +138,14 @@ export default {
       this.name = null
       this.age = null
       this.accept = false
+    },
+    handleResize () {
+      this.width = window.innerWidth
     }
+  },
+  created () {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
   }
 }
 </script>

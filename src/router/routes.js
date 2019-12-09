@@ -57,7 +57,9 @@ const routes = [
         component: () => import('pages/atom.vue')
       },
       {
-        path: 'card',
+        path: 'card/:id',
+        name: 'card',
+        params: true,
         component: () => import('pages/card.vue')
       },
       {
@@ -67,6 +69,10 @@ const routes = [
       {
         path: 'account',
         component: () => import('pages/account.vue')
+      },
+      {
+        path: 'nagrev',
+        component: () => import('pages/nagrev.vue')
       }
     ]
   },
