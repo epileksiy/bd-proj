@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="row">
-        <div class="col-12 q-mt-lg q-mb-xl text-h5 text-center text-uppercase">Личный кабинет</div>
+        <div class="col-12 q-mt-lg q-mb-md text-h5 text-center text-uppercase">Личный кабинет</div>
         <div class="col-1 "></div>
         <div class="col-11 text-h6 ">Данные о пользователе</div>
         <div class="col-1 flex"></div>
@@ -10,24 +10,13 @@
             <div class="col-md-3 col-sm-12 col-xs-12"><img src="../statics/img/photo1.png" alt="" style="width: 250px"></div>
             <div class="col-md-4 col-sm-12 col-xs-12  justify-center items-center ">
               <span>Имя, фамилия</span>
-              <q-input
-                outlined
-                class=" q-mb-lg"
-                v-model="name"
-                label="Имя, Фамилия"
-              />
+              <div class="text-h6 q-mb-md">{{this.datainf.user.name}}</div>
               <sapn>Почта</sapn>
-              <q-input class="q-mb-lg" v-model="email" outlined type="email" label="Email" />
+              <div class="text-h6 q-mb-md">{{this.datainf.user.email}}</div>
               <span>Телефон</span>
-              <q-input
-                outlined
-                class="q-mb-lg"
-                v-model="phone"
-                label="Phone"
-                mask="+7 (###) ### - ####"
-              />
+              <div class="text-h6">{{this.datainf.user.remember_token}}</div>
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12  flex  justify-center items-center"><img src="../statics/img/Group22.png" alt="" style="width: 425px"></div>
+            <div v-show="width>900" class="col-md-4 col-sm-12 col-xs-12  flex  justify-center items-center"><img src="../statics/img/Group22.png" alt="" style="width: 425px"></div>
           </div>
           <div class="row">
             <div class="col-12">
@@ -208,14 +197,32 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   name: 'account',
   data () {
     return {
       ratingModel: 4,
       name: null,
-      email: null
+      email: null,
+      width: 0,
+      datainf: []
     }
+  },
+  methods: {
+    handleResize () {
+      this.width = window.innerWidth
+    }
+  },
+  created () {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+    this.datainf = this.dta
+  },
+  computed: {
+    ...mapGetters({
+      dta: 'auth/auth/data'
+    })
   }
 }
 </script>

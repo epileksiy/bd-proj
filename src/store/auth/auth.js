@@ -2,15 +2,20 @@ import API_URL from '../../boot/api'
 
 const state = {
   token: localStorage.getItem('user-token') || '',
-  products: null
+  products: null,
+  data: []
 }
 const getters = {
-  products: state => state.data
+  data: state => state.data
 }
 const mutations = {
   AUTH_SUCCESS (state, data) {
     state.token = data.token
     console.log(state.token)
+  },
+  DATA_UP (state, data) {
+    state.data = data
+    console.log(state.data)
   },
   AUTH_LOGOUT (state) {
     state.token = ''
@@ -23,6 +28,7 @@ const actions = {
         .then((response) => {
           const token = response.data.token
           commit('AUTH_SUCCESS', token)
+          commit('DATA_UP', response.data)
           localStorage.setItem('user-token', token)
           API_URL.defaults.headers.common['Authorization'] = 'Bearer' + token
           console.log(response)
