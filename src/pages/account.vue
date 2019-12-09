@@ -24,10 +24,10 @@
                 <div class="row">
                   <div class="col-12 text-h6 text-left">Избранные товары </div>
                 </div>
-                <div class="row q-py-lg  justify-center  items-center">
+                <div class="row q-py-lg  justify-start  items-center">
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                      <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <img class="q-mt-sm" src="../statics/img/3.png" style="max-height: 290px; width: auto">
                       <q-rating
                         class="q-ma-sm absolute-top-right"
                         v-model="ratingModel"
@@ -36,7 +36,6 @@
                         :max="1"
                         color="purple"
                       />
-
                       <q-card-section>
                         <div class="text-body2">Vandy Vape Swell-боксмод</div>
                       </q-card-section>
@@ -50,7 +49,7 @@
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                      <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <img class="q-mt-sm" src="../statics/img/66.png" style="max-height: 290px; width: auto">
                       <q-rating
                         class="q-ma-sm absolute-top-right"
                         v-model="ratingModel"
@@ -73,7 +72,7 @@
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                      <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <img class="q-mt-sm" src="../statics/img/54.png" style="max-height: 290px; width: auto">
                       <q-rating
                         class="q-ma-sm absolute-top-right"
                         v-model="ratingModel"
@@ -96,7 +95,7 @@
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                      <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <img class="q-mt-sm" src="../statics/img/68.png" style="max-height: 290px; width: auto">
                       <q-rating
                         class="q-ma-sm absolute-top-right"
                         v-model="ratingModel"
@@ -119,7 +118,7 @@
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                      <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <img class="q-mt-sm" src="../statics/img/70.png" style="max-height: 290px; width: auto">
                       <q-rating
                         class="q-ma-sm absolute-top-right"
                         v-model="ratingModel"
@@ -142,7 +141,7 @@
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                      <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <img class="q-mt-sm" src="../statics/img/79.png" style="max-height: 290px; width: auto">
                       <q-rating
                         class="q-ma-sm absolute-top-right"
                         v-model="ratingModel"
@@ -165,7 +164,7 @@
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 q-my-lg flex justify-center ">
                     <q-card class="my-card flex justify-center items-center" style="width: 250px; min-width: 200px; min-height: 300px ">
-                      <img class="q-mt-sm" src="../statics/img/vape.png" style="max-height: 290px; width: auto">
+                      <img class="q-mt-sm" src="../statics/img/83.png" style="max-height: 290px; width: auto">
                       <q-rating
                         class="q-ma-sm absolute-top-right"
                         v-model="ratingModel"

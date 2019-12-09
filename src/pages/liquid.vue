@@ -79,8 +79,8 @@ export default {
       itms: 'items/items'
     })
   },
-  mounted () {
-    this.getItems(6)
+  created () {
+    this.getItems()
     this.items = this.itms
   },
   methods: {

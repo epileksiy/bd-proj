@@ -24,7 +24,7 @@
                   <q-btn unelevated class="col-md-2 col-sm-3 col-xs-12 flex justify-center items-center q-ma-lg" size="xl" rounded color="blue-6" label="Нет" />
                 </q-card-section>
                 <q-card-section class="row justify-center items-center">
-                  <p class="col-10 text-center text-h5 q-mt-xl">Продукция, представленная на сайте  предназначена только для лиц достигших 18 лет. Нажимая на кнопку «да» вы подтверждаете свое совершеннолетие.</p>
+                  <p class="col-10 text-center text-h5 q-mt-xl">Продукция, представленная на сайте  предназначена <span class="text-red">только для лиц достигших 18 лет</span>. Нажимая на кнопку «да», вы подтверждаете свое совершеннолетие.</p>
                 </q-card-section>
               </q-card>
             </q-page>
