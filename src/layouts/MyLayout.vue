@@ -117,7 +117,7 @@
           <q-item>
             <q-item-label>+7925-567-24-00</q-item-label>
           </q-item>
-          <q-item>
+          <q-item clickable to="/contacts">
             <q-item-label>ТЕЛЕФОНЫ И АДРЕСА</q-item-label>
           </q-item>
         </q-list>

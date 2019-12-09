@@ -79,7 +79,7 @@ export default {
       itms: 'items/items'
     })
   },
-  mounted () {
+  created () {
     this.getItems(8)
     this.items = this.itms
   },
