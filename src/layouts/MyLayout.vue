@@ -1,8 +1,8 @@
 <template>
   <q-layout view="hhh lpR fff">
-      <q-header reveal elevated class="text-white bg-black q-px-md q-py-sm">
+    <q-header reveal elevated class="text-white bg-black q-px-md q-py-sm">
       <q-toolbar v-if="width >= 992"  class="justify-between row">
-        <q-toolbar-title class="col-lg-3 col-md-3 header-logo flex items-center">
+        <q-toolbar-title class="col-lg-3 col-md-4 header-logo flex items-center no-wrap">
           <a href="/"> <img src="../assets/log.png" alt=""></a>
           <q-btn to="/" class="q-ml-sm text-body1 text-uppercase">ГЛАВНАЯ</q-btn>
           <q-btn class="q-ml-sm text-body1 " label="Каталог">
@@ -24,7 +24,7 @@
                   <q-item-section>Бестабачные смеси</q-item-section>
                 </q-item>
                 <q-separator dark/>
-                <q-item clickable to="/vape" v-close-popup>
+                <q-item clickable to="/nagrev" v-close-popup>
                   <q-item-section>Системы нагревания табака</q-item-section>
                 </q-item>
                 <q-separator dark/>
@@ -43,17 +43,17 @@
             </q-menu>
           </q-btn>
         </q-toolbar-title>
-        <q-input class="flex col-lg-6 col-md-5 col-sm-4"  bg-color="white" v-model="search" filled type="search" hint="Search">
-          <template v-slot:append>
+        <q-input  rounded standout="bg-black " class=" q-my-md flex col-lg-6 col-md-5 col-sm-4 justify-center text-black" bg-color="white" v-model="text"  type="search" >
+          <template v-slot:prepend>
             <q-icon name="search" />
           </template>
         </q-input>
-        <q-list class="col-lg-2 col-md-3 col-sm-3 text-body1 flex justify-between items-center">
-            <q-item class="text-white text-body1 text-uppercase q-mr-sm" clickable to="/login">
-              <q-item-section>
-                  <q-item-label>ВХОД</q-item-label>
-              </q-item-section>
-            </q-item>
+        <q-list class="q-ml-md col-lg-3 col-md-3 col-sm-3 text-body1 flex justify-end items-center no-wrap">
+          <q-item class="text-white text-body1 text-uppercase q-mr-sm" clickable to="/login">
+            <q-item-section>
+              <q-item-label>ВХОД</q-item-label>
+            </q-item-section>
+          </q-item>
           <q-item class="text-white q-mr-sm" clickable to="/account">
             <q-item-section>
               <img src="../assets/lk.png" alt="">
@@ -76,20 +76,20 @@
             <div class="row">
               <div class="column">
                 <q-item class="text-center block" clickable to="/">
-                <q-item-section>
-                  <q-item-label>Главная</q-item-label>
-                </q-item-section>
-              </q-item>
-              <q-item class="text-center block" clickable to="/catalog">
-                <q-item-section>
-                  <q-item-label>Каталог</q-item-label>
-                </q-item-section>
-              </q-item>
-              <q-item class="text-center block" clickable to="/categories">
-                <q-item-section>
-                  <q-item-label>Личный кабинет</q-item-label>
-                </q-item-section>
-              </q-item>
+                  <q-item-section>
+                    <q-item-label>Главная</q-item-label>
+                  </q-item-section>
+                </q-item>
+                <q-item class="text-center block" clickable to="/catalog">
+                  <q-item-section>
+                    <q-item-label>Каталог</q-item-label>
+                  </q-item-section>
+                </q-item>
+                <q-item class="text-center block" clickable to="/categories">
+                  <q-item-section>
+                    <q-item-label>Личный кабинет</q-item-label>
+                  </q-item-section>
+                </q-item>
               </div>
             </div>
           </q-menu>
@@ -159,6 +159,7 @@ export default {
     &-logo
       img
         max-width: 221px
-  .block
-    min-width: 150px
+        q-input
+    .block
+      min-width: 150px
 </style>

@@ -1,9 +1,11 @@
 import API_URL from '../../boot/api'
 
 const state = {
-  token: localStorage.getItem('user-token') || ''
+  token: localStorage.getItem('user-token') || '',
+  products: null
 }
 const getters = {
+  products: state => state.data
 }
 const mutations = {
   AUTH_SUCCESS (state, data) {

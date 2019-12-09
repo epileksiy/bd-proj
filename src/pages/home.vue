@@ -17,7 +17,7 @@
         <q-carousel-slide name="second" img-src="https://wallpaperaccess.com/full/87243.jpg">
           <div class="absolute-bottom custom-caption">
             <div class="text-h2 text-white">Аниме клёво</div>
-            <div class="text-subtitle1 text-white">Если ты педик</div>
+            <div class="text-subtitle1 text-white">Ну такое</div>
           </div>
         </q-carousel-slide>
         <q-carousel-slide name="third" img-src="https://cdn.wallpapersafari.com/15/38/YvwZPC.jpg">
@@ -108,30 +108,16 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'Home',
   components: {},
   data () {
     return {
-      items: null,
       slide: 'first',
       width: 0
     }
   },
-  computed: {
-    ...mapGetters({
-      itms: 'items/items'
-    })
-  },
-  mounted () {
-    this.getItems()
-    this.items = this.itms
-  },
   methods: {
-    ...mapActions({
-      getItems: 'items/getItems'
-    }),
     handleResize () {
       this.width = window.innerWidth
     }

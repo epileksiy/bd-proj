@@ -1,11 +1,11 @@
 <template>
-  <q-card class="row  my-card bg-grey-3   no-border no-shadow">
+  <q-card class="row  my-card bg-grey-3 q-mb-md  no-border no-shadow">
     <q-card-section class="col-3">
       <img src="../statics/img/vape1.png" alt="">
     </q-card-section>
     <q-card-section class="col-9 flex column items-starte justify-between">
-      <q-item-label class="text-h6">VOOPOO Vinci - набор</q-item-label>
-      <q-item-label class="text-h6">2890 &#8381;</q-item-label>
+      <q-item-label class="text-h6">{{items[order].title}}</q-item-label>
+      <q-item-label class="text-h6">{{items[order].price}} &#8381;</q-item-label>
       <q-item-label>
         <q-btn outline color="accent" label="В корзину"/>
       </q-item-label>
@@ -15,21 +15,27 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'itemBucket',
-  props: ['item'],
+  props: ['order'],
   data () {
     return {
-      itemid: this.item.id
+      items: []
     }
   },
+  computed: {
+    ...mapGetters({
+      itms: 'items/items'
+    })
+  },
+  mounted () {
+    this.getItems()
+    this.items = this.itms
+  },
   methods: {
-    fuf () {
-      return '../statics/img/' + this.item.id + '.png'
-    },
     ...mapActions({
-      buyItem: 'addToItems'
+      getItems: 'items/getItems'
     })
   }
 }

@@ -69,6 +69,10 @@ const routes = [
       {
         path: 'account',
         component: () => import('pages/account.vue')
+      },
+      {
+        path: 'nagrev',
+        component: () => import('pages/nagrev.vue')
       }
     ]
   },

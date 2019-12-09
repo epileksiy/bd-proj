@@ -9,19 +9,23 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    quant: 7,
+    quant: 0,
     items: [],
     order: [],
     selectedcard: null,
     cardinfo: null,
-    card: null
+    card: null,
+    price: 10270
   },
   getters: {
     order: state => state.order,
     getCard: state => state.card
   },
   actions: {
-    addToItems: ({ commit }, item) => commit('BUY', item),
+    addToItems (context, item, state) {
+      context.commit('BUY', item)
+      state.price++
+    },
     loadCard (context, id) {
       return new Promise((resolve, reject) => {
         API.get(`product/${id}`)
@@ -41,6 +45,7 @@ export default new Vuex.Store({
   mutations: {
     BUY (state, itemid) {
       state.order.push(itemid)
+      state.quant++
     },
     SELECT (state, itemid) {
       state.selectedcard = itemid
