@@ -32,10 +32,10 @@
                   <q-card-section class="text-grey-8">Сортировать по: </q-card-section>
                 </div>
                 <div class="q-pt-sm q-px-sm col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center">
-                    <q-btn class=" full-width" outline color="accent" label="Рейтингу" />
+                  <q-btn class=" full-width" outline color="accent" label="Рейтингу" />
                 </div>
                 <div class="q-pt-sm q-px-sm col-md-2 col-sm-4 col-xs-6 q-mb-sm flex flex items-center justify-center ">
-                      <q-btn class="full-width"  outline color="accent" label="Цене" />
+                  <q-btn class="full-width"  outline color="accent" label="Цене" />
                 </div>
               </div>
             </div>
@@ -56,7 +56,6 @@
         <div class="col-1"></div>
       </div>
     </div>
-    <div class="text-h5 text-center  text-red-8">Items: {{this.itms}}</div>
   </q-page>
 </template>
 
@@ -70,9 +69,9 @@ export default {
     return {
       label: {
         min: 2000,
-        max: 6999,
-        items: null
-      }
+        max: 6999
+      },
+      items: null
     }
   },
   computed: {

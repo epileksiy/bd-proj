@@ -85,9 +85,19 @@
                     <q-item-label>Каталог</q-item-label>
                   </q-item-section>
                 </q-item>
-                <q-item class="text-center block" clickable to="/categories">
+                <q-item class="text-center block" clickable to="/account">
                   <q-item-section>
                     <q-item-label>Личный кабинет</q-item-label>
+                  </q-item-section>
+                </q-item>
+                <q-item class="text-center block" clickable to="/basket">
+                  <q-item-section>
+                    <q-item-label>Корзина</q-item-label>
+                  </q-item-section>
+                </q-item>
+                <q-item class="text-center block" clickable to="/login">
+                  <q-item-section>
+                    <q-item-label>Вход</q-item-label>
                   </q-item-section>
                 </q-item>
               </div>

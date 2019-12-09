@@ -56,7 +56,6 @@
         <div class="col-1"></div>
       </div>
     </div>
-    <div class="text-h5 text-center  text-red-8">Items: {{this.itms}}</div>
   </q-page>
 </template>
 
@@ -70,9 +69,9 @@ export default {
     return {
       label: {
         min: 2000,
-        max: 6999,
-        items: null
-      }
+        max: 6999
+      },
+      items: null
     }
   },
   computed: {

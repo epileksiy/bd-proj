@@ -24,11 +24,13 @@
                   <div class="q-pa-md flex justify-center ">
                     <div class="q-gutter-y-md column">
                       <q-rating
-                        v-model="ratingModel"
-                        size="2.2em"
-                        color="red-8"
-                        icon="star_border"
-                        icon-selected="star"
+                        class="q-ma-md absolute-top-right"
+                        v-model="ratingModel2"
+                        icon-selected="favorite"
+                        icon="favorite_border"
+                        size="2em"
+                        :max="1"
+                        color="purple"
                       />
                     </div>
                   </div>

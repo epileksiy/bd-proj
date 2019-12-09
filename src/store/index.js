@@ -15,16 +15,18 @@ export default new Vuex.Store({
     selectedcard: null,
     cardinfo: null,
     card: null,
-    price: 10270
+    price: 0
   },
   getters: {
     order: state => state.order,
     getCard: state => state.card
   },
   actions: {
-    addToItems (context, item, state) {
+    addToItems (context, item) {
       context.commit('BUY', item)
-      state.price++
+    },
+    addPrice (context, item) {
+      context.commit('ADD_PRICE', item)
     },
     loadCard (context, id) {
       return new Promise((resolve, reject) => {
@@ -53,6 +55,9 @@ export default new Vuex.Store({
     SET_CARD (state, payload) {
       state.card = Object.values(payload)
       console.log(state.card)
+    },
+    ADD_PRICE (state, item) {
+      state.price += item
     }
   },
   modules: {
