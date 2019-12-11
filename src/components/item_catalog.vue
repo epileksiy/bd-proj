@@ -59,7 +59,6 @@ export default {
     addit: function () {
       this.buyItem(this.itemid - 1)
       this.addPrice(this.item.price)
-      console.log(this.item)
     },
     fuf () {
       return '../statics/img/' + this.itemid + '.png'

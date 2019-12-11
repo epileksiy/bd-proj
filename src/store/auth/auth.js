@@ -5,22 +5,23 @@ const state = {
   products: null,
   data: []
 }
+
 const getters = {
   data: state => state.data
 }
+
 const mutations = {
   AUTH_SUCCESS (state, data) {
     state.token = data.token
-    console.log(state.token)
   },
   DATA_UP (state, data) {
     state.data = data
-    console.log(state.data)
   },
   AUTH_LOGOUT (state) {
     state.token = ''
   }
 }
+
 const actions = {
   login ({ commit }, data) {
     return new Promise((resolve, reject) => {
@@ -31,7 +32,6 @@ const actions = {
           commit('DATA_UP', response.data)
           localStorage.setItem('user-token', token)
           API_URL.defaults.headers.common['Authorization'] = 'Bearer' + token
-          console.log(response)
           resolve(response)
         })
         .catch((error) => {
@@ -40,6 +40,7 @@ const actions = {
     })
   }
 }
+
 export default {
   namespaced: true,
   state,

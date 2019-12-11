@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d43d9a21-df23-48c3-8165-6cffcf360426" name="Default Changelist" comment="фыв">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/MyLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MyLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/accessories.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/accessories.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/account.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/atom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/atom.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/liquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/liquid.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mod.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/nagrev.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nagrev.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/pod.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/pod.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/vape.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/vape.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/wliquid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wliquid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.quasar/client-entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/.quasar/client-entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/boot/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/api.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +58,8 @@
       <workItem from="1575762932080" duration="676000" />
       <workItem from="1575803572530" duration="23057000" />
       <workItem from="1575850231703" duration="12000" />
-      <workItem from="1575850451701" duration="15910000" />
+      <workItem from="1575850451701" duration="16381000" />
+      <workItem from="1575994812321" duration="1347000" />
     </task>
     <task id="LOCAL-00001" summary="фыв">
       <created>1575498404931</created>

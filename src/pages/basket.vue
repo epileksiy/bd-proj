@@ -100,7 +100,6 @@ export default {
   },
   mounted () {
     this.orders = this.ordrs
-    console.log(this.orders)
   },
   data () {
     return {

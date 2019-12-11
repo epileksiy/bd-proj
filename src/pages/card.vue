@@ -7,6 +7,7 @@
             <q-card class="my-card bg-grey-3 q-pa-md" style="min-height: 557px ">
               <div class="row">
                 <div class="col-md-5 col-sm-12 col-xs-12">
+                  <img class="q-mt-sm" :src="fuf()" style="max-height: 290px; width: auto">
                   <div class="q-pa-md ">
                     <q-carousel
                       class="bg-grey-3"
@@ -16,9 +17,9 @@
                       thumbnails
                       infinite
                     >
-                      <q-carousel-slide :name="1" img-src="../statics/img/image1.png" style="height: 80%; width: auto"/>
-                      <q-carousel-slide :name="2" img-src="../statics/img/image2.png" style="height: 80%; width: auto"/>
-                      <q-carousel-slide :name="3" img-src="../statics/img/image3.png" style="height: 80%; width: auto"/>
+                      <q-carousel-slide :name="1" :img-src="fuf()" style="height: 80%; width: auto"/>
+                      <q-carousel-slide :name="2" :img-src="fuf()" style="height: 80%; width: auto"/>
+                      <q-carousel-slide :name="3" :img-src="fuf()" style="height: 80%; width: auto"/>
                     </q-carousel>
                   </div>
                   <div class="q-pa-md flex justify-center ">
@@ -253,7 +254,8 @@ export default {
       ratingModel1: 2,
       tab: 'about',
       items: [{}, {}, {}, {}, {}, {}, {}],
-      cardinfo: null
+      cardinfo: null,
+      itemid: this.item.id
     }
   },
   methods: {
@@ -264,6 +266,9 @@ export default {
           done()
         }
       }, 2000)
+    },
+    fuf () {
+      return '../statics/img/' + this.itemid + '.png'
     },
     ...mapActions({
       getCard: 'loadCard'
@@ -277,9 +282,7 @@ export default {
   beforeMount () {
     this.getCard(this.$route.params.id)
       .then(() => {
-        console.log(this.card)
       })
-    console.log(this.$route.params.id)
   }
 }
 </script>
