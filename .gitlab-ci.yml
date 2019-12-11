@@ -1,0 +1,170 @@
+image: alpine:latest
+
+variables:
+  ### Standard DB configs
+  POSTGRES_ENABLED: "false"
+
+  ### Build args
+  DOCKER_DRIVER: overlay2
+  ROLLOUT_RESOURCE_TYPE: deployment
+  DOCKER_TLS_CERTDIR: ""
+  KUBE_NAMESPACE: $CI_PROJECT_PATH_SLUG
+
+stages:
+  - build
+  - test
+  - review
+  - staging
+  - deploy
+  - cleanup
+
+build:
+  stage: build
+  image: "registry.gitlab.com/gitlab-org/cluster-integration/auto-build-image/master:stable"
+  services:
+    - docker:stable-dind
+  script:
+    - |
+      if [[ -z "$CI_COMMIT_TAG" ]]; then
+        export CI_APPLICATION_REPOSITORY=${CI_APPLICATION_REPOSITORY:-$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG}
+        export CI_APPLICATION_TAG=${CI_APPLICATION_TAG:-$CI_COMMIT_SHA}
+      else
+        export CI_APPLICATION_REPOSITORY=${CI_APPLICATION_REPOSITORY:-$CI_REGISTRY_IMAGE}
+        export CI_APPLICATION_TAG=${CI_APPLICATION_TAG:-$CI_COMMIT_TAG}
+      fi
+    - |
+      if [[ "$CI_COMMIT_REF_NAME" != "master" ]]; then
+        export APP_ENV="development"
+        export APP_DEBUG="true"
+      else
+        export APP_ENV="production"
+        export APP_DEBUG="false"
+      fi
+    - |
+      export AUTO_DEVOPS_BUILD_IMAGE_EXTRA_ARGS=" \
+            --build-arg NODE_ENV=\"$APP_ENV\" \
+      "
+    - /build/build.sh
+  only:
+    - branches
+    - tags
+
+test:
+  stage: test
+  image: gliderlabs/herokuish:latest
+  services:
+    - name: postgres:latest
+      alias: postgres
+  script:
+    - export DB_CONNECTION="$DB_CONNECTION"
+    - export DB_PORT="$DB_PORT"
+    - export DB_HOST="postgres"
+    - export DB_DATABASE="$POSTGRES_DB"
+    - export DB_PASSWORD="$POSTGRES_PASSWORD"
+    - export DB_USERNAME="$POSTGRES_USER"
+    - cp -R . /tmp/app
+    - /bin/herokuish buildpack test
+  only:
+    - branches
+    - tags
+  except:
+    variables:
+      - $TEST_DISABLED
+
+.auto-deploy:
+  image: "registry.gitlab.com/gitlab-org/cluster-integration/auto-deploy-image:latest"
+
+review:
+  extends: .auto-deploy
+  stage: review
+  script:
+    - auto-deploy check_kube_domain
+    - auto-deploy download_chart
+    - auto-deploy ensure_namespace
+    - auto-deploy initialize_tiller
+    - auto-deploy create_secret
+    - auto-deploy deploy
+    - auto-deploy persist_environment_url
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    url: http://$CI_PROJECT_ID-$CI_ENVIRONMENT_SLUG.$KUBE_INGRESS_BASE_DOMAIN
+    on_stop: stop_review
+  artifacts:
+    paths: [environment_url.txt]
+  only:
+    refs:
+      - branches
+      - tags
+    kubernetes: active
+  except:
+    refs:
+      - master
+    variables:
+      - $REVIEW_DISABLED
+
+stop_review:
+  extends: .auto-deploy
+  stage: cleanup
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - auto-deploy initialize_tiller
+    - auto-deploy delete
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    action: stop
+  when: manual
+  allow_failure: true
+  only:
+    refs:
+      - branches
+      - tags
+    kubernetes: active
+  except:
+    refs:
+      - master
+    variables:
+      - $REVIEW_DISABLED
+
+staging:
+  extends: .auto-deploy
+  stage: staging
+  script:
+    - auto-deploy check_kube_domain
+    - auto-deploy download_chart
+    - auto-deploy ensure_namespace
+    - auto-deploy initialize_tiller
+    - auto-deploy create_secret
+    - auto-deploy deploy
+  environment:
+    name: staging
+    url: http://$CI_PROJECT_NAME-staging.$KUBE_INGRESS_BASE_DOMAIN
+  only:
+    refs:
+      - master
+    kubernetes: active
+  except:
+    variables:
+      - $STAGING_DISABLED
+
+production:
+  extends: .auto-deploy
+  stage: deploy
+  script:
+    - auto-deploy check_kube_domain
+    - auto-deploy download_chart
+    - auto-deploy ensure_namespace
+    - auto-deploy initialize_tiller
+    - auto-deploy create_secret
+    - auto-deploy deploy
+    - auto-deploy persist_environment_url
+  environment:
+    name: production
+    url: https://$CI_PROJECT_NAME.$KUBE_INGRESS_BASE_DOMAIN
+  artifacts:
+    paths: [environment_url.txt]
+  when: manual
+  only:
+    refs:
+      - master
+    kubernetes: active
