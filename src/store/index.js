@@ -54,7 +54,6 @@ export default new Vuex.Store({
     },
     SET_CARD (state, payload) {
       state.card = Object.values(payload)
-      console.log(state.card)
     },
     ADD_PRICE (state, item) {
       state.price += item
